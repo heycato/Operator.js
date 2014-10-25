@@ -70,10 +70,6 @@ events.report('aMessage', {data:'some important information'});
  - @param: {object} disconnection - Object literal with "message", "from" and "to" properties to disconnect
 
 
-#####dispatch
- -
-
-
 #####createMessenger
  - Creates an instance of Messenger and registers it on the instance of Operater that called createMessenger
  - @param: {string} name - Name of messenger to create
@@ -88,18 +84,17 @@ events.report('aMessage', {data:'some important information'});
 
 #####ignore
  - Maps a callback to an event route
- - @param: {string} message - Name of event route to map to callback
- - @param: {function} callback - Function to map to event route
-
+ - @param: {string} message - Name of event route to ignore
+ - @param: {function} callback - Function connected to event route to ignore
 
 
 #####notify
  - Maps a callback to an event route
- - @param: {string} message - Name of event route to map to callback
- - @param: {function} callback - Function to map to event route
+ - @param: {string} message - Name of event route to notify
+ - @param: {object} data - Data object to pass into callback of mapped event route
 
 
 #####report
  - Maps a callback to an event route
- - @param: {string} message - Name of event route to map to callback
- - @param: {function} callback - Function to map to event route
+ - @param: {string} message - Name of event route to report
+ - @param: {object} data - Data object to send with report
