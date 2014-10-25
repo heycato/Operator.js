@@ -5,7 +5,7 @@ Operator.js
 
 Operator.js is an event mapping object for use as a mediator.  
 
-## Examples
+## Usage
 
 ### Create instances
 
@@ -55,9 +55,7 @@ events.report('aMessage', {data:'some important information'});
 
 ```
 
-## Reference
-
-##Public Methods
+# Reference
 
 ###Operator
 #####connect
@@ -75,7 +73,7 @@ events.report('aMessage', {data:'some important information'});
  - @param: {string} name - Name of messenger to create
 
 
-##Messenger
+###Messenger
 #####listen
  - Maps a callback to an event route
  - @param: {string} message - Name of event route to map to callback
