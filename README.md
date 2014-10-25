@@ -5,7 +5,7 @@ Operator.js
 
 Operator.js is an event mapping object for use as a mediator.  
 
-## Examples
+## Usage
 
 ### Create instances
 
