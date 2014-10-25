@@ -54,3 +54,52 @@ appMsgr.listen('aMessage', someCallback);
 events.report('aMessage', {data:'some important information'});
 
 ```
+
+## Reference
+
+##Public Methods
+
+###Operator
+#####connect
+ - Registers a connection
+ - @param: {object} connection - Object literal with "message", "from" and "to" properties to connect
+ 
+
+#####disconnect
+ - Unregisters a connection
+ - @param: {object} disconnection - Object literal with "message", "from" and "to" properties to disconnect
+
+
+#####dispatch
+ -
+
+
+#####createMessenger
+ - Creates an instance of Messenger and registers it on the instance of Operater that called createMessenger
+ - @param: {string} name - Name of messenger to create
+
+
+##Messenger
+#####listen
+ - Maps a callback to an event route
+ - @param: {string} message - Name of event route to map to callback
+ - @param: {function} callback - Function to map to event route
+
+
+#####ignore
+ - Maps a callback to an event route
+ - @param: {string} message - Name of event route to map to callback
+ - @param: {function} callback - Function to map to event route
+
+
+
+#####notify
+ - Maps a callback to an event route
+ - @param: {string} message - Name of event route to map to callback
+ - @param: {function} callback - Function to map to event route
+
+
+#####report
+ - Maps a callback to an event route
+ - @param: {string} message - Name of event route to map to callback
+ - @param: {function} callback - Function to map to event route
