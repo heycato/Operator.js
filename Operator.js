@@ -1,4 +1,13 @@
-(function(global) {
+(function(name, global, definition){
+	if (typeof module !== "undefined" && module.exports) { 
+		module.exports = definition();
+	} else if (typeof define === "function" && define.amd) {
+		define(definition);
+	} else { 
+		global[name] = definition();
+	}
+})("Operator", this, function(){
+	"use strict";
 
 	function Operator() {
 		this.registry = {};
@@ -81,6 +90,6 @@
 		return !!(this.connections[from.name] && this.connections[from.name][message]);
 	}
 
-	global.Operator = Operator;
+	return Operator;
 
-})(this);
+});
