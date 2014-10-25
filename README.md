@@ -55,9 +55,7 @@ events.report('aMessage', {data:'some important information'});
 
 ```
 
-## Reference
-
-##Public Methods
+# Reference
 
 ###Operator
 #####connect
